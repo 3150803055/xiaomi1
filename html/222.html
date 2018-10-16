@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            $("#divHTML").html("<b>Nice to meet U!</b>");
+            $("#divTEXT").text("<b>Nice to meet U!</b>");
+            // alert($("#divHTML").html());
+            // alert($("#divHTML").text());
+            $("#minput").val("陈广源");
+            // $("#mselect").val(["a","c"])
+        })
+    </script>
+</head>
+<body>
+<div id="divHTML"></div>
+<div id="divTEXT"></div>
+<input id="minput" vlaue="" placeholder="请输入相关信息"/>
+<select id="mselect" multiple="multiple">
+    <option value="a">A</option>
+    <option value="b">B</option>
+    <option value="c">C</option>
+</select>
+</body>
+</html>

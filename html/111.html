@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            $("#abaidu").attr("href", "http://www.baidu.com");
+            $("img:first").attr({"src": "../img/1.jpg", "title": "熊猫盼盼", "width": "200px"});
+            var s = $("img:eq(1)").attr("src");
+            console.log(s);
+            // $("input[type='checkbox']").attr("checked","checked");
+            $("input[type='checkbox']:eq(0),input[type='checkbox']:eq(3)").attr("checked", "checked");
+            alert($("a").attr("href"));
+        })
+    </script>
+</head>
+<body>
+<a href="#" id="abaidu">百度</a>
+<a href="http://www.yahoo.com">雅虎</a>
+<a href="http://www.sohu.com">搜狐</a>
+<a href="http://www.163.com">网易</a>
+<br/>
+<img/>熊猫盼盼
+<img src="../img/2.png" width="200"/>蜗牛爬爬
+<br/>
+<input type="checkbox" name="letter" value="A"/>A
+<input type="checkbox" name="letter" value="B"/>B
+<input type="checkbox" name="letter" value="C"/>C
+<input type="checkbox" name="letter" value="D"/>D
+<input type="checkbox" name="letter" value="E"/>E
+</body>
+</html>

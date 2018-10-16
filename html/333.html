@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .content{
+            width:200px;
+            height:100px;
+            margin:100px auto;
+            background-color:lightblue;
+        }
+    </style>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script>
+        var numarr=["零","壹","贰","叁","肆","伍","陆","柒","捌","玖"]
+        $(function (){
+              $("input").on("keydown",function (event) {
+                  // console.log(event.keyCode);
+                  // console.log(numarr[event.keyCode-96]);
+                  if(event.keyCode>=96&&event.keyCode<=105){
+                  $(".write").text($(".write").text()+numarr[event.keyCode-96]);
+                  return true;}
+                  else{
+                      return false;
+                  }
+              })
+        })
+    </script>
+</head>
+<body>
+<div class="content">
+    <div>键盘测试事件</div>
+    <input type="text"/>
+    <div class="write"></div>
+</div>
+</body>
+</html>
